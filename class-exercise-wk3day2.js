@@ -8,10 +8,11 @@ var usedCarLot = [
     {make: "Subaru", model: "Legacy", year: 2006},
     {make: "Toyota", model: "Camry", year: 2009},
 ];
-
+//pluck takes a string and takes the value of the string matching the property
+//pluck returns an array
 var specificMake = pluck (usedCarLot, "model") ;
 console.assert(pluck(usedCarLot, 'model')[0] === 'Cavalier');
-
+//where returns the entire object
 var specificModel = where(usedCarLot,{model: "Grand Am"});
 console.assert(specificModel[0].model === "Grand Am");
 
